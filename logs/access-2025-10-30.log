@@ -1,0 +1,44 @@
+2025-10-30T07:03:57.723Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-10-30T07:03:58.356Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-10-30T07:04:01.837Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-10-30T07:04:07.702Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-10-30T07:04:07.705Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-00.oissf.mongodb.net
+2025-10-30T07:04:08.764Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-10-30T07:04:09.086Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-10-30T07:04:09.311Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-10-30T07:04:09.314Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-10-30T07:04:47.113Z [HTTP] [req:3923ef04-e5c8-41d9-b2e9-1249078a6d93] ::1 - - [30/Oct/2025:07:04:47 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 846 "-" "PostmanRuntime/7.49.0"
+2025-10-30T07:07:59.084Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-10-30T07:07:59.171Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-10-30T07:08:01.875Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-10-30T07:08:06.490Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-10-30T07:08:06.493Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-00.oissf.mongodb.net
+2025-10-30T07:08:09.392Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-10-30T07:08:09.959Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-10-30T07:08:10.158Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-10-30T07:08:10.161Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-10-30T07:08:14.931Z [HTTP] [req:1ce0399a-6671-4ad3-97f1-411c6a110e12] ::1 - - [30/Oct/2025:07:08:14 +0000] "POST /api/v1/auth/signup HTTP/1.1" 400 51 "-" "PostmanRuntime/7.49.0"
+2025-10-30T07:08:30.339Z [HTTP] [req:8ff7d7e7-6973-424a-9579-6e3030e5a14f] ::1 - - [30/Oct/2025:07:08:30 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 846 "-" "PostmanRuntime/7.49.0"
+2025-10-30T07:21:16.212Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-10-30T07:21:16.354Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-10-30T07:21:19.196Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-10-30T07:21:20.453Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-10-30T07:21:20.456Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-02.oissf.mongodb.net
+2025-10-30T07:21:21.337Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-10-30T07:21:21.702Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-10-30T07:21:21.850Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-10-30T07:21:21.853Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-10-30T07:32:47.943Z [HTTP] [req:6b0db793-14c8-4fc4-aeae-bc876902a617] ::1 - - [30/Oct/2025:07:32:47 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 847 "-" "PostmanRuntime/7.49.0"
+2025-10-30T07:35:19.147Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-10-30T07:35:19.780Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-10-30T07:35:22.411Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-10-30T07:35:23.658Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-10-30T07:35:23.661Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-01.oissf.mongodb.net
+2025-10-30T07:35:24.536Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-10-30T07:35:24.896Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-10-30T07:35:25.084Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-10-30T07:35:25.088Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-10-30T07:36:01.779Z [HTTP] [req:31ffa1fc-8879-4297-9d78-24e9b8987788] ::1 - - [30/Oct/2025:07:36:01 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 847 "-" "PostmanRuntime/7.49.0"
+2025-10-30T10:02:20.827Z [WARN] [req:N/A] ⚠️ Mongoose connection is disconnected.
+2025-10-30T10:03:20.778Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-10-30T10:44:36.139Z [WARN] [req:N/A] Received SIGINT, starting graceful shutdown...

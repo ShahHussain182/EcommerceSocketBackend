@@ -1,12 +1,11 @@
-POST http://localhost:3000/api/auth/signup
+POST http://localhost:3001/api/v1/auth/signup
 Content-Type: application/json
 
 {
-  "firstName": "Shah",
-  "lastName": "Hussain",
+  
+  
   "email": "muhammadhussnainasghar866@gmail.com",
   "phoneNumber": "0302144551712",
   "password": "Szhms5starsz!",
-  "confirmPassword": "Szhms5starsz!",
   "userName" : "Shah hussain"
 }

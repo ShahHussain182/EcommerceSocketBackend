@@ -1,0 +1,29 @@
+2025-10-28T13:10:39.482Z [ERROR] [req:8a6d1259-bac5-46aa-9909-2c57fe156836] ❌ Path: /api/v1/products/690069cbc42ff75572c915a9/images | Error: renditionsToDelete[key].replace is not a function
+2025-10-28T15:57:26.248Z [ERROR] [req:N/A] [ImageProcessingQueue] Queue error: read ECONNRESET
+2025-10-28T15:57:42.482Z [ERROR] [req:N/A] ❌ Path: /api/v1/products/690069cbc42ff75572c915ba/upload-images | Error: Request to https://eqrpnylcpdow.ap-northeast-1.clawcloudrun.com/indexes/products/documents has failed
+2025-10-28T16:00:58.846Z [ERROR] [req:d6fe90e2-f026-4e38-b23f-9d9362ff276f] ❌ Path: /api/v1/products/690069cbc42ff75572c915ba | Error: Socket 'secureConnect' timed out after 32370ms (connectTimeoutMS: 30000)
+2025-10-28T16:01:05.001Z [ERROR] [req:35cb076a-daa5-495f-8c63-ef6ae0529a00] ❌ Path: /api/v1/products/690069cbc42ff75572c915ba | Error: Socket 'secureConnect' timed out after 30318ms (connectTimeoutMS: 30000)
+2025-10-29T04:27:34.710Z [ERROR] [req:N/A] [ImageWorker] Failed to download products/originals/6900e7d6f81e6e609894e8f6-1761667030867.jpeg from S3: The specified key does not exist.
+2025-10-29T04:27:34.712Z [ERROR] [req:N/A] [ImageWorker] Failed to process image for product 690069cbc42ff75572c915ba, image index 2: The specified key does not exist.
+2025-10-29T04:27:36.548Z [ERROR] [req:N/A] [ImageWorker] Job 21 failed for product 690069cbc42ff75572c915ba: The specified key does not exist.
+2025-10-29T04:27:37.189Z [ERROR] [req:N/A] [ImageWorker] Failed to download products/originals/6900e861f81e6e609894e901-1761667169736.jpeg from S3: The specified key does not exist.
+2025-10-29T04:27:37.190Z [ERROR] [req:N/A] [ImageWorker] Failed to process image for product 690069cbc42ff75572c915ba, image index 3: The specified key does not exist.
+2025-10-29T04:27:37.830Z [ERROR] [req:N/A] [ImageWorker] Job 22 failed for product 690069cbc42ff75572c915ba: The specified key does not exist.
+2025-10-29T04:27:38.473Z [ERROR] [req:N/A] [ImageWorker] Failed to download products/originals/6900e7d6f81e6e609894e8f6-1761667030867.jpeg from S3: The specified key does not exist.
+2025-10-29T04:27:38.473Z [ERROR] [req:N/A] [ImageWorker] Failed to process image for product 690069cbc42ff75572c915ba, image index 2: The specified key does not exist.
+2025-10-29T04:27:39.115Z [ERROR] [req:N/A] [ImageWorker] Job 21 failed for product 690069cbc42ff75572c915ba: The specified key does not exist.
+2025-10-29T04:27:39.764Z [ERROR] [req:N/A] [ImageWorker] Failed to download products/originals/6900e861f81e6e609894e901-1761667169736.jpeg from S3: The specified key does not exist.
+2025-10-29T04:27:39.765Z [ERROR] [req:N/A] [ImageWorker] Failed to process image for product 690069cbc42ff75572c915ba, image index 3: The specified key does not exist.
+2025-10-29T04:27:40.434Z [ERROR] [req:N/A] [ImageWorker] Job 22 failed for product 690069cbc42ff75572c915ba: The specified key does not exist.
+2025-10-29T04:27:41.745Z [ERROR] [req:N/A] [ImageWorker] Failed to download products/originals/6900e7d6f81e6e609894e8f6-1761667030867.jpeg from S3: The specified key does not exist.
+2025-10-29T04:27:41.746Z [ERROR] [req:N/A] [ImageWorker] Failed to process image for product 690069cbc42ff75572c915ba, image index 2: The specified key does not exist.
+2025-10-29T04:27:42.393Z [ERROR] [req:N/A] [ImageWorker] Job 21 failed for product 690069cbc42ff75572c915ba: The specified key does not exist.
+2025-10-29T04:27:43.029Z [ERROR] [req:N/A] [ImageWorker] Failed to download products/originals/6900e861f81e6e609894e901-1761667169736.jpeg from S3: The specified key does not exist.
+2025-10-29T04:27:43.030Z [ERROR] [req:N/A] [ImageWorker] Failed to process image for product 690069cbc42ff75572c915ba, image index 3: The specified key does not exist.
+2025-10-29T04:27:43.672Z [ERROR] [req:N/A] [ImageWorker] Job 22 failed for product 690069cbc42ff75572c915ba: The specified key does not exist.
+2025-10-29T04:44:02.036Z [ERROR] [req:0b3fedf0-5e96-4d49-aa24-a23c283fb6d7] ❌ Path: /api/v1/products | Error: Index `products` not found.
+2025-10-29T04:46:32.896Z [ERROR] [req:f7433112-9461-4d24-84bf-93bba03d6b98] ❌ Path: /api/v1/products | Error: Index `products` not found.
+2025-10-29T04:46:35.128Z [ERROR] [req:e26d4db3-6581-42b1-87ab-e63b4a2a3660] ❌ Path: /api/v1/products | Error: Index `products` not found.
+2025-10-29T04:46:36.724Z [ERROR] [req:24fa96a7-6cef-42b9-943e-354ad753758e] ❌ Path: /api/v1/products | Error: Index `products` not found.
+2025-10-29T04:47:02.638Z [ERROR] [req:N/A] ❌ Meilisearch task 24 failed: Index `products` not found.
+2025-10-29T06:51:53.256Z [ERROR] [req:aedc43e7-121b-4c6d-acf7-530bea72af33] ❌ Path: /api/v1/products/6901b75f40aba8140b3f4284/images | Error: renditionsToDelete[key].replace is not a function

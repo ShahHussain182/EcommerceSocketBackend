@@ -1,0 +1,309 @@
+2025-09-10T11:30:59.166Z [DEBUG] Running in development mode
+2025-09-10T11:30:59.248Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:30:59.306Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:30:59.307Z [DEBUG] http://localhost:3001
+2025-09-10T11:30:59.279Z [DEBUG] Running in development mode
+2025-09-10T11:30:59.364Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:30:59.403Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:30:59.411Z [INFO] Mongoose disconnected.
+2025-09-10T11:30:59.416Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:30:59.422Z [INFO] MongoStore client disconnected.
+2025-09-10T11:32:11.218Z [DEBUG] Running in development mode
+2025-09-10T11:32:11.277Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:32:11.334Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:32:11.334Z [DEBUG] http://localhost:3001
+2025-09-10T11:32:11.386Z [DEBUG] Running in development mode
+2025-09-10T11:32:11.453Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:32:11.503Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:32:11.618Z [WARN] 404 Not Found - Path: /
+2025-09-10T11:32:11.577Z [INFO] Mongoose disconnected.
+2025-09-10T11:32:11.621Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:32:11.632Z [INFO] MongoStore client disconnected.
+2025-09-10T11:36:06.171Z [DEBUG] Running in development mode
+2025-09-10T11:36:06.228Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:36:06.267Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:36:06.268Z [DEBUG] http://localhost:3001
+2025-09-10T11:37:01.242Z [DEBUG] Running in development mode
+2025-09-10T11:37:01.329Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:37:01.446Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:37:01.446Z [DEBUG] http://localhost:3001
+2025-09-10T11:37:01.519Z [DEBUG] Running in development mode
+2025-09-10T11:37:01.582Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:37:01.630Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:37:01.643Z [INFO] Mongoose disconnected.
+2025-09-10T11:37:01.655Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:37:01.681Z [INFO] MongoStore client disconnected.
+2025-09-10T11:37:01.801Z [WARN] 404 Not Found - Path: /
+2025-09-10T11:37:21.045Z [DEBUG] Running in development mode
+2025-09-10T11:37:21.103Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:37:21.202Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:37:21.203Z [DEBUG] http://localhost:3001
+2025-09-10T11:37:21.216Z [DEBUG] Running in development mode
+2025-09-10T11:37:21.279Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:37:21.319Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:37:21.327Z [INFO] Mongoose disconnected.
+2025-09-10T11:37:21.333Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:37:21.338Z [INFO] MongoStore client disconnected.
+2025-09-10T11:38:05.597Z [DEBUG] Running in development mode
+2025-09-10T11:38:05.655Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:38:05.687Z [INFO] ✅ Mongoose connected to DB
+2025-09-10T11:38:05.692Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:38:05.689Z [INFO] 📦 MongoDB Connected: localhost
+2025-09-10T11:38:05.692Z [DEBUG] http://localhost:3001
+2025-09-10T11:38:05.723Z [DEBUG] Running in development mode
+2025-09-10T11:38:05.787Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:38:05.824Z [INFO] ✅ Mongoose connected to DB
+2025-09-10T11:38:05.832Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:38:05.826Z [INFO] 📦 MongoDB Connected: localhost
+2025-09-10T11:38:05.842Z [WARN] ⚠️ Mongoose connection is disconnected.
+2025-09-10T11:38:05.850Z [INFO] Mongoose disconnected.
+2025-09-10T11:38:05.858Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:38:05.870Z [INFO] MongoStore client disconnected.
+2025-09-10T11:38:05.961Z [WARN] 404 Not Found - Path: /
+2025-09-10T11:38:31.889Z [DEBUG] Running in development mode
+2025-09-10T11:38:31.962Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:38:32.020Z [INFO] ✅ Mongoose connected to DB
+2025-09-10T11:38:32.044Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:38:32.023Z [INFO] 📦 MongoDB Connected: localhost
+2025-09-10T11:38:32.066Z [DEBUG] http://localhost:3001
+2025-09-10T11:38:32.013Z [DEBUG] Running in development mode
+2025-09-10T11:38:32.146Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:38:32.179Z [INFO] ✅ Mongoose connected to DB
+2025-09-10T11:38:32.183Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:38:32.180Z [INFO] 📦 MongoDB Connected: localhost
+2025-09-10T11:38:32.190Z [WARN] ⚠️ Mongoose connection is disconnected.
+2025-09-10T11:38:32.191Z [INFO] Mongoose disconnected.
+2025-09-10T11:38:32.196Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:38:32.202Z [INFO] MongoStore client disconnected.
+2025-09-10T11:39:44.042Z [DEBUG] Running in development mode
+2025-09-10T11:39:44.113Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:39:44.155Z [INFO] ✅ Mongoose connected to DB
+2025-09-10T11:39:44.161Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:39:44.158Z [INFO] 📦 MongoDB Connected: localhost
+2025-09-10T11:39:44.161Z [DEBUG] http://localhost:3001
+2025-09-10T11:39:44.242Z [DEBUG] Running in development mode
+2025-09-10T11:39:44.298Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:39:44.343Z [INFO] ✅ Mongoose connected to DB
+2025-09-10T11:39:44.350Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:39:44.347Z [INFO] 📦 MongoDB Connected: localhost
+2025-09-10T11:39:44.360Z [WARN] ⚠️ Mongoose connection is disconnected.
+2025-09-10T11:39:44.361Z [INFO] Mongoose disconnected.
+2025-09-10T11:39:44.378Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:39:44.389Z [INFO] MongoStore client disconnected.
+2025-09-10T11:39:44.456Z [WARN] 404 Not Found - Path: /
+2025-09-10T11:40:03.710Z [DEBUG] Running in development mode
+2025-09-10T11:40:03.792Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:40:03.782Z [DEBUG] Running in development mode
+2025-09-10T11:40:03.833Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:40:03.833Z [DEBUG] http://localhost:3001
+2025-09-10T11:40:03.846Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:40:03.898Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:40:03.908Z [INFO] Mongoose disconnected.
+2025-09-10T11:40:03.917Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:40:03.925Z [INFO] MongoStore client disconnected.
+2025-09-10T11:42:46.079Z [DEBUG] Running in development mode
+2025-09-10T11:42:46.134Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:42:46.183Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:42:46.183Z [DEBUG] http://localhost:3001
+2025-09-10T11:42:46.256Z [DEBUG] Running in development mode
+2025-09-10T11:42:46.333Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:42:46.388Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:42:46.405Z [INFO] Mongoose disconnected.
+2025-09-10T11:42:46.414Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:42:46.428Z [INFO] MongoStore client disconnected.
+2025-09-10T11:43:59.543Z [DEBUG] Running in development mode
+2025-09-10T11:43:59.641Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:43:59.694Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:43:59.695Z [DEBUG] http://localhost:3001
+2025-09-10T11:43:59.734Z [DEBUG] Running in development mode
+2025-09-10T11:43:59.808Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:43:59.863Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:43:59.873Z [INFO] Mongoose disconnected.
+2025-09-10T11:43:59.883Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:43:59.893Z [INFO] MongoStore client disconnected.
+2025-09-10T11:44:03.564Z [DEBUG] Running in development mode
+2025-09-10T11:44:03.632Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:44:03.676Z [INFO] 🚀 Server running in development mode on port 3001
+2025-09-10T11:44:03.677Z [DEBUG] http://localhost:3001
+2025-09-10T11:44:03.663Z [DEBUG] Running in development mode
+2025-09-10T11:44:03.737Z [INFO] MongoClient connected for sessions.
+2025-09-10T11:44:03.785Z [ERROR] Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\express@4.21.2\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/Administrator/dyad-apps/Backend/backend/server.js:119:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-09-10T11:44:03.795Z [INFO] Mongoose disconnected.
+2025-09-10T11:44:03.802Z [ERROR] MongoExpiredSessionError: Cannot use a session that has ended
+    at applySession (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sessions.js:756:16)
+    at Connection.prepareCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:177:62)
+    at Connection.sendCommand (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:269:30)
+    at sendCommand.next (<anonymous>)
+    at Connection.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\cmap\connection.js:333:26)
+    at Server.command (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\sdam\server.js:194:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:213:32)
+    at async executeOperation (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\operations\execute_operation.js:78:16)
+    at async Collection.createIndex (C:\Users\Administrator\dyad-apps\Backend\node_modules\.pnpm\mongodb@6.19.0\node_modules\mongodb\lib\collection.js:372:25)
+2025-09-10T11:44:03.810Z [INFO] MongoStore client disconnected.

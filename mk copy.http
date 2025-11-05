@@ -1,12 +1,10 @@
-POST http://localhost:5000/api/auth/signup
+POST http://localhost:3000/api/auth/verify-email
 Content-Type: application/json
 
 {
-  "firstName": "Shah",
-  "lastName": "Hussain",
-  "email": "saifimalook42@gmail.com",
-  "phoneNumber": "0302144551712",
-  "password": "Szhms5starsz!",
-  "confirmPassword": "Szhms5starsz!",
-  "userName" : "Shah hussain"
+
+"code" : "585728"
+
+
 }
+

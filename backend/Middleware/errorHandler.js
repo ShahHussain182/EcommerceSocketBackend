@@ -1,43 +1,70 @@
-import {z} from 'zod';
+// Middleware/errorHandler.js
+import { z } from "zod";
+import { logger } from "../Utils/logger.js";// ✅ use shared logger
+import { getRequestId } from "../Utils/requestContext.js";
 
+// ----------------- Zod Error Handler -----------------
+const handleZodError = (res, error) => {
+  const errorsMap = new Map();
 
-const handleZodError = ( res, error) => {
-const errorsMap = new Map();
-
-error.issues.forEach((err) => {
-  const field = err.path.join(".");
-  if (!errorsMap.has(field)) {
-    errorsMap.set(field, {
-      message: err.message,
-      path: err.path,
-    });
-  }
-});
-
-// Convert the Map back to an array of errors
-const errors = Array.from(errorsMap.values());
-        
- res.status(400).json({ 
-     message: "Validation Error",
-     errors,
+  error.issues.forEach((err) => {
+    const field = err.path.join(".");
+    if (!errorsMap.has(field)) {
+      errorsMap.set(field, {
+        message: err.message,
+        path: err.path,
+      });
+    }
   });
-}
 
+  const errors = Array.from(errorsMap.values());
 
-const errorHandler = (error,req,res,next) => {
-    console.log(`Path ${req.path}`,error);
+  res.status(400).json({
+    status: "fail",
+    message: "Validation Error",
+    errors,
+  });
+};
 
-    if (error instanceof SyntaxError && error.status === 400 && 'body' in error) {
-    console.error('Bad JSON:', error.message);
+// ----------------- Global Error Handler -----------------
+const errorHandler = (error, req, res, next) => {
+  const requestId = getRequestId();
+  logger.error(`❌ Path: ${req.path} | Error: ${error.message}`, {
+    error,
+    requestId,
+  });
+
+  if (error instanceof SyntaxError && error.status === 400 && "body" in error) {
     return res.status(400).json({
-      status: 'error',
-      message: 'Invalid JSON payload received. Please check your request body format.',
+      status: "error",
+      message:
+        "Invalid JSON payload received. Please check your request body format.",
     });
   }
-    if (error instanceof z.ZodError) {
-      return handleZodError(res,error);
-    } else return res.status(500).send("Internal Server Error");
 
+  if (error instanceof z.ZodError) {
+    return handleZodError(res, error);
+  }
 
-}
-export default errorHandler;
+  res.status(500).json({
+    status: "error",
+    requestId, // 🔥 return to client too
+    message:
+      process.env.NODE_ENV === "development"
+        ? error.message || "Internal Server Error"
+        : "Internal Server Error",
+  });
+};
+
+// ----------------- 404 Handler -----------------
+const notFoundHandler = (req, res, next) => {
+  logger.warn(`404 Not Found - Path: ${req.originalUrl}`);
+
+  res.status(404).json({
+    status: "error",
+    message: "Route not found",
+    errors: [],
+  });
+};
+
+export { errorHandler, notFoundHandler };

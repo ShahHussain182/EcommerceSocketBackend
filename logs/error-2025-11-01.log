@@ -1,0 +1,1 @@
+2025-11-01T12:11:19.013Z [ERROR] [req:7440784f-cf47-40f8-87dd-4f96a489aa6e] ❌ Path: /api/v1/auth/forgot-password | Error: PASSWORD_RESET_REQUEST_TEMPLATE is not defined

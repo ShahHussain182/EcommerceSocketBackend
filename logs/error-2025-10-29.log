@@ -1,0 +1,36 @@
+2025-10-29T08:14:04.694Z [ERROR] [req:d925e0d2-533d-477f-9fe9-b75b6ec183c3] ❌ Path: /api/v1/products/6901b75f40aba8140b3f4273/upload-images | Error: Request to https://eqrpnylcpdow.ap-northeast-1.clawcloudrun.com/indexes/products/documents has failed
+2025-10-29T08:21:23.968Z [ERROR] [req:N/A] [ImageProcessingQueue] Queue error: read ECONNRESET
+2025-10-29T08:48:25.552Z [ERROR] [req:N/A] ❌ Path: /api/v1/products | Error: [
+  {
+    "code": "too_small",
+    "minimum": 1,
+    "type": "string",
+    "inclusive": true,
+    "exact": false,
+    "message": "Color is required.",
+    "path": [
+      "variants",
+      0,
+      "color"
+    ]
+  }
+]
+2025-10-29T09:02:30.182Z [ERROR] [req:N/A] ❌ Path: /api/v1/products | Error: [
+  {
+    "code": "too_small",
+    "minimum": 1,
+    "type": "string",
+    "inclusive": true,
+    "exact": false,
+    "message": "Color is required.",
+    "path": [
+      "variants",
+      0,
+      "color"
+    ]
+  }
+]
+2025-10-29T10:41:10.805Z [ERROR] [req:N/A] ReferenceError: reply is not defined
+    at file:///C:/Users/Administrator/dyad-apps/Ecommerce%20App/Backend/backend/Controllers/auth.controller.js:265:5
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-29T11:31:40.282Z [ERROR] [req:3dbf7b7f-976a-4877-aa3d-cd08b69e045a] ❌ Path: /api/v1/products | Error: Request to https://eqrpnylcpdow.ap-northeast-1.clawcloudrun.com/indexes/products/search has failed

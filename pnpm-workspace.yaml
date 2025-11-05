@@ -1,0 +1,4 @@
+onlyBuiltDependencies:
+  - bcrypt
+  - msgpackr-extract
+  - sharp

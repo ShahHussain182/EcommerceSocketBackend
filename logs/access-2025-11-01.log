@@ -1,0 +1,215 @@
+2025-11-01T11:58:07.269Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-01T11:58:08.188Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-01T11:58:12.728Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-01T11:58:14.982Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-01T11:58:14.985Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-00.oissf.mongodb.net
+2025-11-01T11:58:18.669Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-01T11:58:18.928Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-01T11:58:19.203Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-01T11:58:19.230Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-11-01T12:01:08.573Z [WARN] [req:fcd7d687-d93d-4104-9014-1430a6083662] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:01:08.584Z [HTTP] [req:fcd7d687-d93d-4104-9014-1430a6083662] ::1 - - [01/Nov/2025:12:01:08 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:01:09.502Z [HTTP] [req:06214058-582d-4875-b0ac-aa51b2331472] ::1 - - [01/Nov/2025:12:01:09 +0000] "GET /api/v1/categories HTTP/1.1" 200 1379 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:01:11.042Z [HTTP] [req:59fcae51-1732-4924-a566-4b920817873a] ::1 - - [01/Nov/2025:12:01:11 +0000] "GET /api/v1/products/featured HTTP/1.1" 200 6833 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:01:17.171Z [WARN] [req:13e64dc3-3597-4627-86f5-7ce77b0a2152] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:01:17.173Z [HTTP] [req:13e64dc3-3597-4627-86f5-7ce77b0a2152] ::1 - - [01/Nov/2025:12:01:17 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:01:19.589Z [WARN] [req:ca08b12f-4148-4032-abca-a980da037bc2] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:01:19.591Z [HTTP] [req:ca08b12f-4148-4032-abca-a980da037bc2] ::1 - - [01/Nov/2025:12:01:19 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:05:52.596Z [HTTP] [req:5084341f-31ea-41c7-bd2c-87e5dcb2e39c] ::1 - - [01/Nov/2025:12:05:52 +0000] "OPTIONS /api/v1/auth/signup HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:05:58.213Z [HTTP] [req:1236db3f-3161-41d6-a9da-d5283d294b64] ::1 - - [01/Nov/2025:12:05:58 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 851 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:05:58.708Z [HTTP] [req:511753df-fd55-4716-b0a7-d29ace3a7cdf] ::1 - - [01/Nov/2025:12:05:58 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 200 310 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:05:59.529Z [HTTP] [req:8eb3f5ed-2c86-49c2-ae33-cba52fbcf8da] ::1 - - [01/Nov/2025:12:05:59 +0000] "GET /api/v1/cart HTTP/1.1" 200 265 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:05:59.771Z [HTTP] [req:007c850e-b21f-4965-9938-5b1bda90d2fd] ::1 - - [01/Nov/2025:12:05:59 +0000] "GET /api/v1/wishlist HTTP/1.1" 200 242 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:00.315Z [HTTP] [req:7a6d2dcf-0ee1-430f-bd8d-d8f1c52657a2] ::1 - - [01/Nov/2025:12:06:00 +0000] "GET /api/v1/cart HTTP/1.1" 200 265 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:47.763Z [HTTP] [req:9c2fd35f-e727-4ec2-927c-71a9d1c613d0] ::1 - - [01/Nov/2025:12:06:47 +0000] "OPTIONS /api/v1/auth/verify-email HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:51.695Z [HTTP] [req:0aaef798-737c-483c-a4c4-687baf2c9497] ::1 - - [01/Nov/2025:12:06:51 +0000] "POST /api/v1/auth/verify-email HTTP/1.1" 200 497 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:52.514Z [HTTP] [req:cf45119c-0439-4157-95dd-5b5afbcb278c] ::1 - - [01/Nov/2025:12:06:52 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:52.605Z [HTTP] [req:57b93b20-f6c6-49aa-9da8-0ef4c352e3c1] ::1 - - [01/Nov/2025:12:06:52 +0000] "GET /api/v1/products/featured HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:55.407Z [HTTP] [req:b29a80ed-1256-43c1-b2c4-2d1d0a830883] ::1 - - [01/Nov/2025:12:06:55 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:57.699Z [HTTP] [req:0d820375-526d-48b5-a95b-77d53c041a14] ::1 - - [01/Nov/2025:12:06:57 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 200 309 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:58.337Z [HTTP] [req:997e27d2-6b9c-446d-9e79-fdb1d1a9d334] ::1 - - [01/Nov/2025:12:06:58 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:58.592Z [HTTP] [req:06c40a8f-b2eb-4850-9a62-3f96e548e08a] ::1 - - [01/Nov/2025:12:06:58 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:06:58.966Z [HTTP] [req:5a70e774-1a48-45f6-a8f9-12ff64d252a7] ::1 - - [01/Nov/2025:12:06:58 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:03.322Z [HTTP] [req:adf18206-f5d8-4fcf-b175-1b9186b8f4d1] ::1 - - [01/Nov/2025:12:07:03 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:03.402Z [HTTP] [req:86e94673-6352-42b1-9d9e-985451de7fc9] ::1 - - [01/Nov/2025:12:07:03 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:14.366Z [HTTP] [req:714ddd29-58e8-4207-a1b4-43887df8a37e] ::1 - - [01/Nov/2025:12:07:14 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:14.899Z [HTTP] [req:22e0ca4f-bb90-43c1-9cd7-86ce3a5c8e2c] ::1 - - [01/Nov/2025:12:07:14 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:28.630Z [HTTP] [req:8faed223-a50e-4cd6-be1b-0c48a342d67d] ::1 - - [01/Nov/2025:12:07:28 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:28.745Z [HTTP] [req:4b35641f-d2ec-4ff3-9e61-849e6960329c] ::1 - - [01/Nov/2025:12:07:28 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:30.941Z [HTTP] [req:54577cae-5f22-437f-92ab-1b6985673533] ::1 - - [01/Nov/2025:12:07:30 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 46 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:31.185Z [WARN] [req:655b10df-a2a1-425e-83d1-6b12d0304144] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:07:31.187Z [HTTP] [req:655b10df-a2a1-425e-83d1-6b12d0304144] ::1 - - [01/Nov/2025:12:07:31 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:31.261Z [WARN] [req:8f73d060-381e-4abe-b025-6247e62d2c0d] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:07:31.270Z [HTTP] [req:8f73d060-381e-4abe-b025-6247e62d2c0d] ::1 - - [01/Nov/2025:12:07:31 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:31.372Z [HTTP] [req:13ba0d02-3287-4bfa-8072-15cb8cb98504] ::1 - - [01/Nov/2025:12:07:31 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:41.435Z [WARN] [req:297e846f-c0c5-4688-a114-527f1d07224a] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:07:41.437Z [HTTP] [req:297e846f-c0c5-4688-a114-527f1d07224a] ::1 - - [01/Nov/2025:12:07:41 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:42.992Z [HTTP] [req:6928d709-98e1-4ff9-9f40-c580b8361428] ::1 - - [01/Nov/2025:12:07:42 +0000] "GET /api/v1/products/featured HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:43.069Z [HTTP] [req:cd6e29f8-fdf8-4c0e-995c-f849bd875707] ::1 - - [01/Nov/2025:12:07:43 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:07:44.987Z [WARN] [req:c9c4a098-a74a-45ed-8447-282b6a536788] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:07:44.989Z [HTTP] [req:c9c4a098-a74a-45ed-8447-282b6a536788] ::1 - - [01/Nov/2025:12:07:44 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:08:12.070Z [WARN] [req:9b7e3069-99ce-4cab-8caa-f6c09eb326a3] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:08:12.071Z [HTTP] [req:9b7e3069-99ce-4cab-8caa-f6c09eb326a3] ::1 - - [01/Nov/2025:12:08:12 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:08:12.310Z [HTTP] [req:99d56e82-fbde-4dbf-804a-6938a74511fc] ::1 - - [01/Nov/2025:12:08:12 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:10:50.372Z [WARN] [req:e6e436ee-cf6b-4034-9a08-ba4af8f8fed6] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:10:50.376Z [HTTP] [req:e6e436ee-cf6b-4034-9a08-ba4af8f8fed6] ::1 - - [01/Nov/2025:12:10:50 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:11:08.577Z [WARN] [req:03cd3424-e091-4443-9750-364a8f6185be] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:11:08.580Z [HTTP] [req:03cd3424-e091-4443-9750-364a8f6185be] ::1 - - [01/Nov/2025:12:11:08 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:11:18.400Z [HTTP] [req:284bf47e-38b4-41bc-8764-2f01f6ea3fd0] ::1 - - [01/Nov/2025:12:11:18 +0000] "OPTIONS /api/v1/auth/forgot-password HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:11:19.013Z [ERROR] [req:7440784f-cf47-40f8-87dd-4f96a489aa6e] ❌ Path: /api/v1/auth/forgot-password | Error: PASSWORD_RESET_REQUEST_TEMPLATE is not defined
+2025-11-01T12:11:19.014Z [HTTP] [req:7440784f-cf47-40f8-87dd-4f96a489aa6e] ::1 - - [01/Nov/2025:12:11:19 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 500 128 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:15:15.352Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-01T12:15:16.717Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-01T12:15:20.011Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-01T12:15:22.583Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-01T12:15:22.586Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-00.oissf.mongodb.net
+2025-11-01T12:15:24.151Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-01T12:15:24.693Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-01T12:15:25.235Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-01T12:15:25.239Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-11-01T12:16:11.099Z [HTTP] [req:8e3e989e-7df9-4d8f-86ab-2eb8ba14ca21] ::1 - - [01/Nov/2025:12:16:11 +0000] "OPTIONS /api/v1/auth/forgot-password HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:16:14.206Z [HTTP] [req:2766ccd0-a789-4a6a-904a-d214078139bf] ::1 - - [01/Nov/2025:12:16:14 +0000] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 67 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:16:21.291Z [WARN] [req:cd3cb4a6-a343-40d8-9135-384f9e0cf6df] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:16:21.296Z [HTTP] [req:cd3cb4a6-a343-40d8-9135-384f9e0cf6df] ::1 - - [01/Nov/2025:12:16:21 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:16:57.255Z [WARN] [req:b7455851-74d2-4425-97dd-21c7d8d542c3] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:16:57.257Z [HTTP] [req:b7455851-74d2-4425-97dd-21c7d8d542c3] ::1 - - [01/Nov/2025:12:16:57 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:17:15.339Z [WARN] [req:f2b837cc-a766-40b0-b0e3-bc987bf10627] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:17:15.345Z [HTTP] [req:f2b837cc-a766-40b0-b0e3-bc987bf10627] ::1 - - [01/Nov/2025:12:17:15 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:17:38.289Z [HTTP] [req:d6e07b94-9aca-4a0b-bf3a-440730754647] ::1 - - [01/Nov/2025:12:17:38 +0000] "OPTIONS /api/v1/auth/reset-password/9897f45ffc6ba5dcfe160ae080f0f003f7ffdb55 HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:17:41.192Z [HTTP] [req:d9379aab-a8cd-40f5-99a9-1471413aa004] ::1 - - [01/Nov/2025:12:17:41 +0000] "POST /api/v1/auth/reset-password/9897f45ffc6ba5dcfe160ae080f0f003f7ffdb55 HTTP/1.1" 200 54 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:17:49.245Z [WARN] [req:31a4861f-bfa3-403e-abc5-74af231dd890] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:17:49.247Z [HTTP] [req:31a4861f-bfa3-403e-abc5-74af231dd890] ::1 - - [01/Nov/2025:12:17:49 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:10.963Z [HTTP] [req:4417924a-c610-4e5f-b0a6-62b29f0ae866] ::1 - - [01/Nov/2025:12:18:10 +0000] "OPTIONS /api/v1/auth/login HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:12.572Z [HTTP] [req:d345ca83-5a4e-45aa-9ca6-e5ce2b53f3ab] ::1 - - [01/Nov/2025:12:18:12 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 841 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:13.075Z [HTTP] [req:5d57c770-4bab-4b78-93a7-a9377502d160] ::1 - - [01/Nov/2025:12:18:13 +0000] "GET /api/v1/products/featured HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:13.083Z [HTTP] [req:13744566-b1dc-44e1-af0e-de359d8bd2a1] ::1 - - [01/Nov/2025:12:18:13 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 200 310 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:13.143Z [HTTP] [req:774b9ca2-1ed9-4132-a82c-ea057e21644f] ::1 - - [01/Nov/2025:12:18:13 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:13.465Z [HTTP] [req:824c67c4-7521-4723-af67-96e70bd611d8] ::1 - - [01/Nov/2025:12:18:13 +0000] "GET /api/v1/cart HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:13.473Z [HTTP] [req:5d6993c8-658b-4d3e-8886-0c7f539764fa] ::1 - - [01/Nov/2025:12:18:13 +0000] "GET /api/v1/wishlist HTTP/1.1" 200 242 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:13.832Z [HTTP] [req:0e696092-10a3-4089-b93c-d67aed9ff8f4] ::1 - - [01/Nov/2025:12:18:13 +0000] "GET /api/v1/cart HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:14.544Z [HTTP] [req:8032a1a9-e895-4d3b-8132-aa2fd4aed576] ::1 - - [01/Nov/2025:12:18:14 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:14.549Z [HTTP] [req:d78f63be-1b64-4c02-b1d8-b046a78f474d] ::1 - - [01/Nov/2025:12:18:14 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:17.336Z [HTTP] [req:22c87036-1780-4034-a9ba-9fd590e15941] ::1 - - [01/Nov/2025:12:18:17 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 46 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:17.457Z [WARN] [req:9c4c7ce0-e0d4-4b5f-97df-5f8af2b74abb] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:18:17.460Z [HTTP] [req:9c4c7ce0-e0d4-4b5f-97df-5f8af2b74abb] ::1 - - [01/Nov/2025:12:18:17 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:17.523Z [WARN] [req:3c763fb9-e47b-4c51-8494-ffc7e27b8caf] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:18:17.525Z [HTTP] [req:3c763fb9-e47b-4c51-8494-ffc7e27b8caf] ::1 - - [01/Nov/2025:12:18:17 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:17.552Z [HTTP] [req:f420c97c-eb7c-43d8-a886-d900bc9f06cf] ::1 - - [01/Nov/2025:12:18:17 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:24.923Z [WARN] [req:f2e79552-81f7-447a-b249-4a41158093a8] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:18:24.925Z [HTTP] [req:f2e79552-81f7-447a-b249-4a41158093a8] ::1 - - [01/Nov/2025:12:18:24 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:24.934Z [WARN] [req:60b9bc95-1ba7-4b37-ad79-a6dcb8eaf4d9] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:18:24.937Z [HTTP] [req:60b9bc95-1ba7-4b37-ad79-a6dcb8eaf4d9] ::1 - - [01/Nov/2025:12:18:24 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:28.799Z [WARN] [req:e8956e8c-8d82-45db-8a09-bfd2d320745b] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:18:28.801Z [HTTP] [req:e8956e8c-8d82-45db-8a09-bfd2d320745b] ::1 - - [01/Nov/2025:12:18:28 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:50.607Z [HTTP] [req:67c8a270-ad6d-4afb-ae22-47705f6abfaf] ::1 - - [01/Nov/2025:12:18:50 +0000] "OPTIONS /api/v1/auth/signup HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:53.527Z [HTTP] [req:ba79057b-8f36-469a-b371-c4c5ab057397] ::1 - - [01/Nov/2025:12:18:53 +0000] "POST /api/v1/auth/signup HTTP/1.1" 200 838 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:53.752Z [HTTP] [req:720fff13-ad8b-41be-9a5e-1f6631b4bf1f] ::1 - - [01/Nov/2025:12:18:53 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 200 297 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:54.278Z [HTTP] [req:8fcc0368-627e-4768-a267-d7cb7befe20c] ::1 - - [01/Nov/2025:12:18:54 +0000] "GET /api/v1/cart HTTP/1.1" 200 265 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:54.305Z [HTTP] [req:329f2c4d-4317-481d-bf6f-388841a0dfc4] ::1 - - [01/Nov/2025:12:18:54 +0000] "GET /api/v1/wishlist HTTP/1.1" 200 242 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:18:54.615Z [HTTP] [req:49ed66d3-f89e-4c95-bdf0-681c5999a361] ::1 - - [01/Nov/2025:12:18:54 +0000] "GET /api/v1/cart HTTP/1.1" 200 265 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:03.067Z [HTTP] [req:422907bf-322e-4f95-90e9-32006b804a30] ::1 - - [01/Nov/2025:12:20:03 +0000] "OPTIONS /api/v1/auth/verify-email HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:05.067Z [HTTP] [req:fb721439-a7e4-44f4-a019-b2cc39d92193] ::1 - - [01/Nov/2025:12:20:05 +0000] "POST /api/v1/auth/verify-email HTTP/1.1" 200 484 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:05.397Z [HTTP] [req:d561c5e5-44e5-4641-acd2-8fe06392b61d] ::1 - - [01/Nov/2025:12:20:05 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:05.406Z [HTTP] [req:d33402e2-912e-4f4f-a3d2-34205945e707] ::1 - - [01/Nov/2025:12:20:05 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 200 296 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:07.122Z [HTTP] [req:5c208e57-c76e-4393-825b-68ed49a3c6d4] ::1 - - [01/Nov/2025:12:20:07 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:07.133Z [HTTP] [req:19daf311-a3e7-4c0f-81af-cb8b53c26764] ::1 - - [01/Nov/2025:12:20:07 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:09.220Z [HTTP] [req:bdc38545-4720-4772-988b-540e212db15b] ::1 - - [01/Nov/2025:12:20:09 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 46 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:09.321Z [WARN] [req:664bb443-ff69-4514-b813-15cb7de76f4c] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:20:09.323Z [HTTP] [req:664bb443-ff69-4514-b813-15cb7de76f4c] ::1 - - [01/Nov/2025:12:20:09 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:09.379Z [WARN] [req:66b878ba-279a-492f-bcac-617156f8820d] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T12:20:09.383Z [HTTP] [req:66b878ba-279a-492f-bcac-617156f8820d] ::1 - - [01/Nov/2025:12:20:09 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T12:20:09.433Z [HTTP] [req:7293c0e1-b841-43d4-852e-49c1d2642876] ::1 - - [01/Nov/2025:12:20:09 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T13:13:27.837Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-01T13:13:30.810Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-01T13:13:35.670Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-01T16:05:50.485Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-01T16:05:54.631Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-01T16:05:59.731Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-01T16:06:05.504Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-01T16:06:05.507Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-01.oissf.mongodb.net
+2025-11-01T16:06:07.598Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-01T16:06:08.621Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-01T16:06:10.609Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-01T16:06:10.612Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-11-01T16:07:36.036Z [WARN] [req:e3237d39-3dfc-4231-972e-e726f8aba636] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-01T16:07:36.043Z [HTTP] [req:e3237d39-3dfc-4231-972e-e726f8aba636] ::1 - - [01/Nov/2025:16:07:36 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+2025-11-01T16:07:36.486Z [HTTP] [req:5d0df4a7-abec-40b3-8daf-31027a8c76dd] ::1 - - [01/Nov/2025:16:07:36 +0000] "GET /api/v1/products/featured HTTP/1.1" 200 6833 "http://localhost:8080/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+2025-11-01T16:07:36.547Z [HTTP] [req:d6279d15-7945-46ed-9cc6-5d8f966281db] ::1 - - [01/Nov/2025:16:07:36 +0000] "GET /api/v1/categories HTTP/1.1" 200 1379 "http://localhost:8080/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+2025-11-01T16:07:53.639Z [HTTP] [req:4a5ecb11-1878-4bac-92e6-cd417c57de57] ::1 - - [01/Nov/2025:16:07:53 +0000] "OPTIONS /api/v1/subscribe-newsletter HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+2025-11-01T16:07:56.599Z [HTTP] [req:ef60c39a-3d53-43c4-9220-784271c4a7c7] ::1 - - [01/Nov/2025:16:07:56 +0000] "POST /api/v1/subscribe-newsletter HTTP/1.1" 500 63 "http://localhost:8080/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+2025-11-01T16:11:21.918Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-01T16:11:22.053Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-01T16:11:26.705Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-01T16:11:31.274Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-01T16:11:31.277Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-00.oissf.mongodb.net
+2025-11-01T16:11:33.030Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-01T16:11:33.735Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-01T16:11:34.278Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-01T16:11:34.283Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-11-01T16:11:39.016Z [HTTP] [req:f7db43d5-e01d-41f5-8d3a-b5f7078c9995] ::1 - - [01/Nov/2025:16:11:39 +0000] "OPTIONS /api/v1/subscribe-newsletter HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+2025-11-01T16:11:44.112Z [HTTP] [req:0ec4e058-2044-410a-91bd-ee05fbbe98ca] ::1 - - [01/Nov/2025:16:11:44 +0000] "POST /api/v1/subscribe-newsletter HTTP/1.1" 500 63 "http://localhost:8080/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+2025-11-01T16:12:02.822Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-01T16:12:02.898Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-01T16:12:05.630Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-01T16:12:08.432Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-01T16:12:08.436Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-02.oissf.mongodb.net
+2025-11-01T16:12:10.616Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-01T16:12:11.490Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-01T16:12:11.794Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-01T16:12:11.797Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-11-01T16:12:24.173Z [HTTP] [req:06b3f981-23fd-40b7-bafe-ad2b74348cce] ::1 - - [01/Nov/2025:16:12:24 +0000] "OPTIONS /api/v1/subscribe-newsletter HTTP/1.1" 204 0 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T16:12:27.520Z [HTTP] [req:c9f0b156-9ae0-43ea-91a4-25475c573c6c] ::1 - - [01/Nov/2025:16:12:27 +0000] "POST /api/v1/subscribe-newsletter HTTP/1.1" 200 66 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-01T16:12:41.831Z [WARN] [req:N/A] Received SIGINT, starting graceful shutdown...
+2025-11-02T06:26:03.845Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-02T06:26:04.298Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-02T06:26:08.974Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-02T06:26:12.270Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-02T06:26:12.273Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-02.oissf.mongodb.net
+2025-11-02T06:26:15.805Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-02T06:26:15.969Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-02T06:26:16.140Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-02T06:26:16.143Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-11-02T06:26:42.291Z [WARN] [req:28db5e1d-79da-4666-b155-fdda22a579a3] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-02T06:26:42.303Z [HTTP] [req:28db5e1d-79da-4666-b155-fdda22a579a3] ::1 - - [02/Nov/2025:06:26:42 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:43.123Z [WARN] [req:ae607b24-15d8-4795-83af-dd2702078d26] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-02T06:26:43.133Z [HTTP] [req:ae607b24-15d8-4795-83af-dd2702078d26] ::1 - - [02/Nov/2025:06:26:43 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:43.148Z [HTTP] [req:c96fea28-7505-4e09-99a6-6f737adcbe72] ::1 - - [02/Nov/2025:06:26:43 +0000] "GET /api/v1/categories HTTP/1.1" 200 1379 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:43.425Z [HTTP] [req:d2deb5f9-fb9a-4fd7-95f3-eb2961fd779e] ::1 - - [02/Nov/2025:06:26:43 +0000] "GET /api/v1/products/featured HTTP/1.1" 200 6833 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:43.434Z [HTTP] [req:b08db391-347f-43f5-8ffc-951351bb71ec] ::1 - - [02/Nov/2025:06:26:43 +0000] "GET /api/v1/categories HTTP/1.1" 200 1379 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:43.655Z [HTTP] [req:26bf6f90-ac0d-4106-bd6f-b00c8b107054] ::1 - - [02/Nov/2025:06:26:43 +0000] "GET /api/v1/products/featured HTTP/1.1" 200 6833 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:46.106Z [WARN] [req:0c2278bf-bf06-407d-9ead-f43f436d497e] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-02T06:26:46.108Z [HTTP] [req:0c2278bf-bf06-407d-9ead-f43f436d497e] ::1 - - [02/Nov/2025:06:26:46 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:46.251Z [HTTP] [req:80638fb9-e72b-45a5-8948-19b3b5aaec0c] ::1 - - [02/Nov/2025:06:26:46 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:47.637Z [HTTP] [req:f0049e5c-507c-4168-a3b7-2e42c8a70798] ::1 - - [02/Nov/2025:06:26:47 +0000] "GET /api/v1/products?page=1&limit=12&priceRange=0%2C500&sortBy=price-asc HTTP/1.1" 200 17197 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:26:56.361Z [HTTP] [req:e6af1fe1-a06b-45c3-ad09-8c27fa62819f] ::1 - - [02/Nov/2025:06:26:56 +0000] "GET /api/v1/products?page=2&limit=12&priceRange=0%2C500&sortBy=price-asc HTTP/1.1" 200 17762 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:27:24.032Z [HTTP] [req:ee1abe3f-8441-4bd6-80be-23140bd33d65] ::1 - - [02/Nov/2025:06:27:24 +0000] "GET /api/v1/products?page=3&limit=12&priceRange=0%2C500&sortBy=price-asc HTTP/1.1" 200 17258 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:27:45.934Z [WARN] [req:af2ae0e8-39be-4fbf-b731-fe01564d8115] [requireAuth] Unauthorized: No token provided for path: /check-auth
+2025-11-02T06:27:45.936Z [HTTP] [req:af2ae0e8-39be-4fbf-b731-fe01564d8115] ::1 - - [02/Nov/2025:06:27:45 +0000] "GET /api/v1/auth/check-auth HTTP/1.1" 401 62 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:27:46.173Z [HTTP] [req:4a8aa5b0-4e80-4c60-8ea5-c3c6daf18e25] ::1 - - [02/Nov/2025:06:27:46 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+2025-11-02T06:50:13.636Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-02T06:50:13.708Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-02T06:50:18.422Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-02T06:50:20.666Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-02T06:50:20.669Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-00.oissf.mongodb.net
+2025-11-02T06:50:22.159Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-02T06:50:22.762Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-02T06:50:24.197Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-02T06:50:24.200Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-11-02T06:50:38.691Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-02T06:50:38.771Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-02T06:50:40.485Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-02T06:50:43.228Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-02T06:50:43.231Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-01.oissf.mongodb.net
+2025-11-02T06:50:44.625Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-02T06:50:45.177Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-02T06:50:45.449Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-02T06:50:45.453Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001
+2025-11-02T06:51:45.371Z [INFO] [req:N/A] [ImageProcessingQueue] Image processing queue initialized.
+2025-11-02T06:51:45.447Z [INFO] [req:N/A] [ImageWorker] Image processing worker started.
+2025-11-02T06:51:48.145Z [INFO] [req:N/A] MongoClient connected for sessions.
+2025-11-02T06:51:51.527Z [INFO] [req:N/A] ✅ Mongoose connected to DB
+2025-11-02T06:51:51.531Z [INFO] [req:N/A] 📦 MongoDB Connected: cluster0-shard-00-02.oissf.mongodb.net
+2025-11-02T06:51:52.964Z [INFO] [req:N/A] 46 products already exist in the database. Skipping product seeding.
+2025-11-02T06:51:53.493Z [INFO] [req:N/A] 7 categories already exist in the database. Skipping category seeding.
+2025-11-02T06:51:54.872Z [INFO] [req:N/A] Order number counter already exists, current sequence: 1004
+2025-11-02T06:51:54.875Z [INFO] [req:N/A] 🚀 Server running in development mode on port 3001

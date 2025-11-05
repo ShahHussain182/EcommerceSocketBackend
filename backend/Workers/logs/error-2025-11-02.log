@@ -1,0 +1,8 @@
+2025-11-02T12:39:46.888Z [ERROR] [req:N/A] AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1122:18)
+    at afterConnectMultiple (node:net:1689:7)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+2025-11-02T12:39:51.896Z [ERROR] [req:N/A] AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1122:18)
+    at afterConnectMultiple (node:net:1689:7)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
