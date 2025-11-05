@@ -1,6 +1,0 @@
-2025-10-28T06:58:06.934Z [ERROR] [req:N/A] MeiliSearchApiError: Index `products` not found.
-    at #request (file:///C:/Users/Administrator/dyad-apps/Ecommerce%20App/Backend/node_modules/.pnpm/meilisearch@0.53.0/node_modules/meilisearch/dist/esm/index.js:469:13)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Index.getDocuments (file:///C:/Users/Administrator/dyad-apps/Ecommerce%20App/Backend/node_modules/.pnpm/meilisearch@0.53.0/node_modules/meilisearch/dist/esm/index.js:864:7)
-    at async checkMeiliProducts (file:///C:/Users/Administrator/dyad-apps/Ecommerce%20App/Backend/backend/scripts/checkMeiliProducts.js:16:25)
-2025-10-28T06:58:41.613Z [ERROR] [req:N/A] ❌ Meilisearch task 0 failed: Index `products` not found.

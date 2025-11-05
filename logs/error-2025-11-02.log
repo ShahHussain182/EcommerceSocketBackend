@@ -1,7 +1,0 @@
-2025-11-02T13:00:50.695Z [ERROR] [req:N/A] AggregateError [ECONNREFUSED]: 
-    at internalConnectMultiple (node:net:1122:18)
-    at afterConnectMultiple (node:net:1689:7)
-    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
-2025-11-02T15:09:58.294Z [ERROR] [req:N/A] [ImageProcessingQueue] Queue error: connect ETIMEDOUT
-2025-11-02T15:10:09.331Z [ERROR] [req:N/A] [ImageProcessingQueue] Queue error: connect ETIMEDOUT
-2025-11-02T15:15:41.798Z [ERROR] [req:N/A] RabbitMQ connection error:

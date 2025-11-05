@@ -1,5 +1,0 @@
-2025-11-03T08:46:07.760Z [ERROR] [req:N/A] RabbitMQ connection error:
-2025-11-03T10:18:58.271Z [ERROR] [req:N/A] [ImageProcessingQueue] Queue error: read ECONNRESET
-2025-11-03T10:19:09.332Z [ERROR] [req:N/A] [ImageProcessingQueue] Queue error: connect ETIMEDOUT
-2025-11-03T10:19:11.937Z [ERROR] [req:N/A] RabbitMQ connection error:
-2025-11-04T05:15:58.848Z [ERROR] [req:99b480dd-ec3b-4a8d-b484-4024610aca91] ❌ Path: /api/v1/auth/google | Error: Wrong recipient, payload audience != requiredAudience
