@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "kill-port 3001 && cross-env NODE_ENV=development nodemon backend/server.js ",
     "start": "cross-env NODE_ENV=production node backend/server.js",
-    "postinstall": "pnpm sync:meili",
+    
     "sync:meili": "node backend/scripts/syncMeili.js",
     "clear": "node backend/scripts/clearProducts.js",
     "check:meili": "node backend/scripts/checkMeiliProducts.js"
@@ -55,6 +55,7 @@
     "pdfkit": "^0.17.2",
     "resend": "^6.3.0",
     "sharp": "^0.34.4",
+    "socket.io": "^4.8.1",
     "uuid": "^13.0.0",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0",
