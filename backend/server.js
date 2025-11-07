@@ -24,6 +24,7 @@ import categoryRouter from "./Routers/category.router.js";
 import reportRouter from "./Routers/report.router.js";
 import userRouter from "./Routers/user.router.js";
 import adminRouter from "./Routers/admin.router.js";
+import internalRoutes from "./Routers/internal.js"
 import { errorHandler, notFoundHandler } from "./Middleware/errorHandler.js";
 import { config } from "./Utils/config.js";
 import { logger } from "./Utils/logger.js";
@@ -33,7 +34,8 @@ import { Counter } from "./Models/Counter.model.js";
 import { Category } from "./Models/Category.model.js";
 import { mockCategories } from "./Utils/mockCategories.js";
 import { imageProcessingQueue } from './Queues/imageProcessing.queue.js'; // Import queue
-
+import http from "http";
+import { initSocket, getIo } from "./Utils/socket.js";
 import rabbit,{ closeRabbitConnection } from './Utils/lavinmqClient.js';
 
 
@@ -118,7 +120,7 @@ app.use("/api/v1/customers", customerRouter);
 app.use("/api/v1/categories", categoryRouter);
 app.use("/api/v1/reports", reportRouter);
 app.use("/api/v1/admin", adminRouter);
-
+app.use('/internal', internalRoutes);
 app.use(notFoundHandler);
 app.use(errorHandler);
 
@@ -177,8 +179,9 @@ const startServer = async () => {
     logger.error("❌ Error during database seeding or counter initialization:", error);
   }
   // --- End of Seeding Logic ---
-
-  server = app.listen(config.PORT, () => {
+  server = http.createServer(app);
+  initSocket(server, { corsOrigin: CLIENT_URL || process.env.CLIENT_URL || "*" });
+  server.listen(config.PORT, () => {
     logger.info(
       `🚀 Server running in ${config.NODE_ENV} mode on port ${config.PORT}`
     );
@@ -211,6 +214,17 @@ async function cleanup() {
       logger.error("Failed to close HTTP server:", error);
     }
   }
+    // Close socket.io if initialized
+    try {
+      const io = getIo();
+      if (io) {
+        logger.debug("Closing socket.io server...");
+        await new Promise((resolve) => io.close(() => resolve()));
+        logger.info("Socket.io closed.");
+      }
+    } catch (err) {
+      logger.error("Failed to close socket.io:", err);
+    }
   await closeRabbitConnection();
   if (mongoose.connection.readyState !== 0) {
     logger.debug("Disconnecting Mongoose...");
@@ -240,12 +254,7 @@ async function cleanup() {
   } catch (error) {
     logger.error(`Failed to close image processing queue: ${error.message}`);
   }
-  try {
-    await imageProcessingWorker.close();
-    logger.info("BullMQ image processing worker closed.");
-  } catch (error) {
-    logger.error(`Failed to close image processing worker: ${error.message}`);
-  }
+  
 
 
   logger.info("All connections closed successfully.");

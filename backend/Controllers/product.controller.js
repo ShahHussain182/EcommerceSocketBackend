@@ -9,6 +9,7 @@ import { DeleteObjectCommand } from "@aws-sdk/client-s3";
 import s3Client from "../Utils/s3Client.js";
 import { imageProcessingQueue } from '../Queues/imageProcessing.queue.js'; // Import the queue
 import { v4 as uuidv4 } from 'uuid'; 
+import {notifyProduct} from '../Utils/socket.js'
 
 const S3_BUCKET_NAME = process.env.MINIO_BUCKET_NAME || "e-store-images";
 const MINIO_URL = process.env.MINIO_URL || "http://localhost:9000";
@@ -510,7 +511,11 @@ export const uploadProductImages = catchErrors(async (req, res) => {
 
   product.imageProcessingStatus = 'pending';
   await product.save();
-
+  notifyProduct(product._id.toString(), {
+    status: 'pending',
+    productId: product._id.toString(),
+    // optional: minimal payload to avoid heavy responses
+  });
   // Add jobs to queue (after product.save to ensure product exists)
   for (const job of queuedJobs) {
     await imageProcessingQueue.add(`process-image-${job.productId}-${job.uploadId}`, {
