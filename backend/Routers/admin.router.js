@@ -7,6 +7,7 @@ import {
   updateUserProfileByAdmin,
   deleteUserByAdmin
 } from '../Controllers/user.controller.js';
+import { getAllContactMessages, deleteContactMessage } from '../Controllers/contact.controller.js'; // New import
 
 const adminRouter = express.Router();
 
@@ -21,5 +22,12 @@ adminRouter.route('/users/:id')
   .get(getUserById) // Get a specific user by ID
   .put(updateUserProfileByAdmin) // Update a user's profile (Admin)
   .delete(deleteUserByAdmin); // Delete a user (Admin)
+
+// Contact Message Management Routes (New)
+adminRouter.route('/contact-messages')
+  .get(getAllContactMessages);
+
+adminRouter.route('/contact-messages/:id')
+  .delete(deleteContactMessage);
 
 export default adminRouter;
