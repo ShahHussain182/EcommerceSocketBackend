@@ -21,7 +21,25 @@ const internalApi = axios.create({
     'Content-Type': 'application/json',
   },
 });
-
+async function notifyInternal(payload) {
+  try {
+    console.log('[ImageWorker] -> notifyInternal :', API_URL, 'payload summary:', JSON.stringify(payload).slice(0, 1000));
+    const resp = await internalApi.post('/internal/notify-product', payload);
+    console.log('[ImageWorker] <- notifyInternal success:', resp.status, JSON.stringify(resp.data).slice(0, 1000));
+    return { ok: true, status: resp.status, data: resp.data };
+  } catch (notifyErr) {
+    // full details for debugging
+    if (notifyErr?.response) {
+      console.warn('[ImageWorker] notify failed - response status:', notifyErr.response.status);
+      console.warn('[ImageWorker] notify failed - response data:', JSON.stringify(notifyErr.response.data).slice(0,2000));
+    } else if (notifyErr?.request) {
+      console.warn('[ImageWorker] notify failed - no response, request details:', notifyErr.message);
+    } else {
+      console.warn('[ImageWorker] notify failed - error:', notifyErr.message || notifyErr);
+    }
+    return { ok: false, error: notifyErr };
+  }
+}
 // Helper to download file from S3
 const downloadFileFromS3 = async (key) => {
   try {
@@ -221,21 +239,18 @@ export function createImageProcessingWorker(connection) {
       console.log(`[ImageWorker] Product ${productId} updated at index=${targetIndex}. imageUrls.len=${product.imageUrls.length} imageRenditions.len=${product.imageRenditions.length}`);
       console.log(`[ImageWorker] Updated rendition at index ${targetIndex}: ${JSON.stringify(updatedRendition, null, 2)}`);
       // notify internal server to emit socket event (success/pending)
-(async () => {
-  try {
-    await internalApi.post('/internal/notify-product', {
-      productId,
-      status: product.imageProcessingStatus, // 'completed' or 'pending'
-      imageIndex: targetIndex,
-      rendition: {
-        medium: updatedRendition.medium,
-        thumbnail: updatedRendition.thumbnail,
-      },
-    });
-  } catch (notifyErr) {
-    console.warn('[ImageWorker] notify endpoint call failed:', notifyErr?.message || notifyErr);
-  }
-})();
+      console.log('[ImageWorker] about to notify internal (success) for product', productId, 'index', targetIndex);
+      const notifyResult = await notifyInternal({
+        productId,
+        status: product.imageProcessingStatus, // 'completed' or 'pending'
+        imageIndex: targetIndex,
+        rendition: { medium: updatedRendition.medium, thumbnail: updatedRendition.thumbnail }
+      });
+      if (!notifyResult.ok) {
+        console.warn('[ImageWorker] notifyInternal reported failure (success-path)', notifyResult.error?.message || notifyResult.error);
+      } else {
+        console.log('[ImageWorker] notifyInternal reported ok for product', productId);
+      }
       // Update Meilisearch if completed
       if (product.imageProcessingStatus === 'completed') {
         await productIndex.updateDocuments([{

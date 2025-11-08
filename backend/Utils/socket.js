@@ -41,6 +41,7 @@ export function notifyProduct(productId, payload) {
     return;
   }
   io.to(`product:${productId}`).emit("imageStatus", payload);
+  console.log(payload)
 }
 
 // For direct emits to all clients (if needed)
