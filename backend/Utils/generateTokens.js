@@ -6,7 +6,7 @@ return new Promise((resolve,reject) => {
     };
     const secret =  process.env.ACCESS_TOKEN_SECRET;
     const options = {
-        expiresIn : '5m',
+        expiresIn : '1h',
         issuer : "mupage.com",
         audience : data.userId
     };
